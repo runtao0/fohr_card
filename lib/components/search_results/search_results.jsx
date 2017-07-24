@@ -24,7 +24,7 @@ class SearchResults extends React.Component {
             displayQuery,
             data
         } = this.props
-        if ((Object.keys(data).length > 0) && (queryString !== "")) {
+        if ((Object.keys(data).length > 0) && (displayQuery !== "")) {
             return (
                 <div id="results">
                     <h1>Influencers matching "<strong>{displayQuery}</strong>"</h1>
