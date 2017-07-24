@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Hoefler;
+    src: url('../assets/hoefler_text.ttf');
+}
+
+/*
+For some reason Roboto would not work for me, so I used google fonts for that
+@font-face {
+    font-family: Roboto0;
+    src: url('../assets/roboto-regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../assets/roboto-thin.ttf');
+    font-weight: lighter;
+}*/
+
+html, body, header, h1, a, ul, li,
+strong, main, section, img, div,
+h2, h3, p, input, article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  background: transparent;
+  font-weight: inherit;
+  z-index: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+  box-sizing: content-box;
+  z-index: 0;
+}

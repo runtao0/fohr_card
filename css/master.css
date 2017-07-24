@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0px 1px 3px 0px #eeeeee;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+header > section {
+    padding: 1.5em;
+    height: 1em;
+    vertical-align: middle;
+    width: 100%;
+}
+
+header > section.logo {
+    width: auto;
+    border-right: 1px solid #eeeeee;
+}
+
+header > section > img {
+    height: 100%;
+    width: auto;
+}
+
+img.icon {
+    transform: scale(1.5);
+
+}
+
+header > section > input, ::-webkit-input-placeholder {
+    margin-left: 1em;
+    width: calc(100% - 50px);
+    color: #ababab;
+}
+
+
+#results {
+    padding: 6em 3em 1em 3em
+}
+
+#results > h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    padding-bottom: 1em;
+}
+
+#results > h1 > strong {
+    font-weight: 400;
+}
+
+#influencer-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.influencer {
+    width: calc(32% - .5em);
+    max-width: 300px;
+    margin-bottom: 4em;
+}
+
+.influencer > * {
+    width: 100%;
+}
+
+/* I noticed that the images given are not square,
+ I think the place to fix that is in the api, and not
+ the css so I did not square them here */
+.influencer > img {
+    box-shadow: 0px 0px 10px 5px #eeeeee;
+    margin-bottom: 1em;
+}
+
+.influencer > h2 {
+    font-family: 'Hoefler', serif;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    color: #535353;
+}
+.influencer > h3 {
+    /* I'm not sure this is the right font as on the mockup */
+    text-transform: uppercase;
+    font-size: .75em;
+    color: #6a6a6a;
+    line-height: 1.5em;
+}
+.influencer > p {
+    font-size: .75em;
+    color: #858585;
+    line-height: 1.5em;
+}
