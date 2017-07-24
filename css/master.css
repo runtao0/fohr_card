@@ -78,6 +78,7 @@ header > section > input, ::-webkit-input-placeholder {
 .influencer > img {
     box-shadow: 0px 0px 10px 5px #eeeeee;
     margin-bottom: 1em;
+    max-height: 300px;
 }
 
 .influencer > h2 {

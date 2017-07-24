@@ -5,7 +5,9 @@ import SearchResults from './search_results/search_results';
 const Combined = ({ queryString,
     data = {},
     changeQuery,
-    fetchQuery }) => {
+    fetchQuery,
+    displayQuery
+ }) => {
     return (
         <div>
             <FohrHeader
@@ -14,7 +16,8 @@ const Combined = ({ queryString,
                 fetchQuery={ fetchQuery }/>
             <SearchResults
                 queryString={ queryString }
-                data={ data }/>
+                data={ data }
+                displayQuery={ displayQuery }/>
         </div>
     )
 }

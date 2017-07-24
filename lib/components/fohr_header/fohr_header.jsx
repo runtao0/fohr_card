@@ -18,7 +18,7 @@ class FohrHeader extends React.Component {
         if (event.key !== "Enter") return;
         const { fetchQuery,
             queryString } = this.props;
-        if (!queryString) return;
+        if (!queryString || queryString === "") return;
         fetchQuery(queryString);
     }
 

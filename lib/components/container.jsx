@@ -7,6 +7,7 @@ import { changeQuery,
 const mapStateToProps = ({ query }) => ({
     queryString: query.queryString,
     data: query.data,
+    displayQuery: query.displayQuery
 })
 
 const mapDispatchToProps = (dispatch) => ({

@@ -20,18 +20,25 @@ class SearchResults extends React.Component {
     }
 
     render() {
-        const { queryString, data } = this.props
-        if (Object.keys(data).length > 0) {
+        const { queryString,
+            displayQuery,
+            data
+        } = this.props
+        if ((Object.keys(data).length > 0) && (queryString !== "")) {
             return (
                 <div id="results">
-                    <h1>Influencers matching "<strong>{queryString}</strong>"</h1>
+                    <h1>Influencers matching "<strong>{displayQuery}</strong>"</h1>
                     <ul id="influencer-table">
                         { this.makeInfluencers() }
                     </ul>
                 </div>
             )
         } else {
-            return null
+            return (
+                <div id="results">
+                    <h1>Press Enter to search</h1>
+                </div>
+            )
         }
     }
 }
